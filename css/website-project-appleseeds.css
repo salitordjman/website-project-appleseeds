@@ -21,8 +21,11 @@
   height: 100%;
   width: 100%;
 }
-/* ---------page -1---------- */
-/* ---------nav bar---------- */
+
+/* ------------------------page -1----------------------------------------------------- */
+
+/* ----------------------------------nav bar--------------------------------------------------- */
+
  .navbar {
   height: 13vh;
   width: 100vw;
@@ -102,7 +105,8 @@
   content: "";
   transform: translateX(0);
 }
-/* --------page-1- cover ------------ */
+/* -----------------------page-1- cover --------------------------------------------------- */
+
   .page-1-cover{
   height: 100%;
   width: 100%;
@@ -176,7 +180,9 @@
 
   vertical-align: middle;
 }
+
 /* -------------------page-2---------------------------------------------------------------- */
+
 .page-2{
   height: 100vh;
   width: 100%;
@@ -420,7 +426,9 @@
     color: var(--secondary-color);
   }
 }
+
 /* -----------------------page-3------------------------------------------------------------- */
+
 .page-3{
   height: 100vh;
   width: 100%;
@@ -458,6 +466,7 @@
   text-align: center;
   color: var(--light-color);
   padding: calc(1vh + 1vw) calc(2vh + 2vw);
+  padding-top: calc(2vh + 2vw);
 }
 .right3 *{
   padding: 0.5rem;
@@ -469,11 +478,46 @@
   z-index: -1;
   border-radius: 20%;
 }
+
+/* -----------------------contact------------------------------------------------------------- */
+
 .contact{
   grid-column: 2 / span 2;
   grid-row: 1/ span 4;
   text-align: center;
+  margin-top: calc(1.5vh + 1.5vw);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
 }
+.contact h3{
+  font-size: calc(1.6vh + 1.6vw);
+} 
+.contact h6{
+  font-size: calc(1vh + 1vw);
+  padding: calc(0.8vh + 0.8vw);
+}
+.form-control{
+  padding: 1vh;
+}
+input{
+  padding: 1vh;
+  background: var(--blue);
+  outline-color: var(--secondary-color);
+}
+.btn{
+  color: var(--light-color);
+  padding:0.5vw 4vw;
+  margin-top: 3vh;
+  border-radius: 25%;
+  background: var(--secondary-color);
+  border:1px solid var(--light-color);
+}
+.btn:hover{
+  color: var(--dark-color);
+}
+
+/* -----------------------footer------------------------------------------------------------- */
+
 .footer{
   grid-column: 1 / span 6;
   grid-row: 5/ span 1;
@@ -483,4 +527,22 @@
   margin-left: 1.2vw;
   margin-top: 2vh;
   height: 14vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.social{
+  padding-top: 3vh;
+}
+.social a{
+  color: blue;
+}
+.social a:hover{
+  color: var(--secondary-color);
+}
+.footer p{
+  padding-top: 2vh;
+  font-size: calc(0.6vh + 0.6vw);
 }
