@@ -83,12 +83,18 @@
   gap: 0.3rem;
   padding: 0 2vw;
   margin: 0;
-  padding-top: 17vh;
+  padding-top: 14vh;
   grid-template-columns: repeat(6, 15.3%);
   grid-template-rows: repeat(5, 18%);
 }
 .middle-h1 h1 {
-  font-size: 4vh;
+  padding-top: 2vh;
+  font-size: 3.5vh;
+}
+.iteamall {
+  font-size: calc(0.9vh + 0.9vw);
+  text-align: center;
+  font-weight: bolder;
 }
 
 /* -----------------------page-3------------------------------------------------------------- */
@@ -117,7 +123,7 @@
 
 .contact_in{
   grid-column: 1 / span 3;
-  padding-top: 11vh;
+  padding-top: 9vh;
 }
 .contact_in h3{
   font-size: calc(2vh + 2vw);
@@ -134,4 +140,14 @@ input{
   margin-top: 1.5vh;
   height: 4vh;
   width: 22vw;
+}
+.text_input{
+  font-size: calc(1.1vh + 1.1vw);
+}
+
+/* --------------footer--------------------------------------------------------- */
+
+.footer p{
+  padding-top: 2vh;
+  font-size: calc(0.9vh + 0.9vw);
 }
